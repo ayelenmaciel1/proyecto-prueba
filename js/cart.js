@@ -94,6 +94,19 @@ document.addEventListener("DOMContentLoaded", () => {
         updateCartBadge();
         updateCartSummary();
     });
+    
+    function toggleSection(element) {
+        const details = element.nextElementSibling;
+        const icon = element.querySelector(".icon");
+    
+        if (details.style.display === "none") {
+          details.style.display = "block";
+          icon.classList.add("rotated");
+        } else {
+          details.style.display = "none";
+          icon.classList.remove("rotated");
+        }
+      }
 
     // Botón de "Seguir Comprando"
     continueShoppingButton.addEventListener("click", () => {
