@@ -173,10 +173,9 @@ document.querySelector(".btn-checkout").addEventListener("click", () => {
     // Si todo está correcto
     setFeedback("¡Compra realizada con éxito!", false);
     localStorage.removeItem("cartItems"); // Limpiar carrito
-});
-
-// Esperar un momento antes de iniciar la animación y redirigir
-setTimeout(() => {
+    
+    // Esperar un momento antes de iniciar la animación y redirigir
+    setTimeout(() => {
     // Aplicar animación de desvanecimiento
     feedback.classList.add("fade-out");
 
@@ -185,6 +184,7 @@ setTimeout(() => {
         location.href = "categories.html"; // Redirige a la página de categorías
     }, 1000); // Espera 1 segundo (coincide con la duración de la animación)
 }, 1000); // Mostrar feedback por 1 segundo antes de iniciar la animación
+});
 
     // Inicializa el carrito en el DOM
     renderCart();
