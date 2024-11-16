@@ -94,19 +94,22 @@ document.addEventListener("DOMContentLoaded", () => {
         updateCartBadge();
         updateCartSummary();
     });
-    
-    function toggleSection(element) {
-        const details = element.nextElementSibling;
-        const icon = element.querySelector(".icon");
-    
-        if (details.style.display === "none") {
-          details.style.display = "block";
-          icon.classList.add("rotated");
-        } else {
-          details.style.display = "none";
-          icon.classList.remove("rotated");
-        }
+
+    // Selecciona todos los encabezados (h5)
+    document.querySelectorAll(".shipping-options h5").forEach((header) => {
+    header.addEventListener("click", function () {
+      const details = this.nextElementSibling;
+      const icon = this.querySelector(".icon");
+
+      if (details.style.display === "none" || !details.style.display) {
+        details.style.display = "block";
+        icon.classList.add("rotated");
+      } else {
+        details.style.display = "none";
+        icon.classList.remove("rotated");
       }
+    });
+  });
 
     // Botón de "Seguir Comprando"
     continueShoppingButton.addEventListener("click", () => {
