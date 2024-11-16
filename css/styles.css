@@ -1260,12 +1260,10 @@ input.invalid {
 .feedback-message {
   display: none;
   font-size: 20px;
-  font-weight: bold;
   text-align: center;
   padding: 20px;
   margin: 20px;
   border-radius: 5px;
-  background-color: #4CAF50; /* Color verde para éxito */
   color: white;
   opacity: 1;
   transition: opacity 1s ease-out;
