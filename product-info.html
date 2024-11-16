@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>eMercado - Todo lo que busques está aquí</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+<body class="product-info">
+  <nav class="navbar navbar-expand-lg navbar-dark p-1">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav w-100 justify-content-between">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="categories.html">Categorías</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="sell.html">Vender</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a id="user-name" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
+            <ul class="dropdown-menu dropdown-menu-right">
+              <li><a class="dropdown-item" href="cart.html">Mi carrito</a><span id="cart-badge">0</span></li>
+              <li><a class="dropdown-item" href="my-profile.html">Mi perfil</a></li>
+              <li><a id="logout" class="dropdown-item" href="login.html">Cerrar sesión</a></li>
+            </ul>
+          </li>
+          <li class="nav-item d-flex align-items-center">
+            <img id="navbar-profile-pic" src="default-pic.jpg" alt="Foto de perfil" class="rounded-circle">
+          </li>
+          <li class="form-check form-switch mb-3" class="nav-item">
+              <input class="form-check-input" type="checkbox" id="darkModeSwitch">
+              <label class="form-check-label" for="darkModeSwitch">◑</label>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <div class="container">
+      <!--===Seccion de información del producto===-->
+      <div id="product-info-container" class="row"></div>
+      <!--COLUMNAS DE DATOS EXTRA DE PRODUCTO-->
+      <div class="row">
+        <div id="related-products-container" class="col-md-4">
+          <!--===Productos relacionados===-->
+          <div id="related-products" class="row">
+            <h3>PRODUCTOS RELACIONADOS:</h3>
+          </div>
+        </div>
+        <div class="col-md-8">
+          <!-- Sección de calificación y comentarios -->
+          <div class="rating-section">
+            <h2>CALIFICA ESTE ARTÍCULO Y BRINDA TU OPINIÓN</h2>
+            <div class="rating-container">
+              <label for="rating">CALIFICACIÓN:</label>
+              <div class="star-rating">
+                <input type="radio" name="rating" id="star5" value="5"><label for="star5" class="star"><i class="fas fa-star"></i></label>
+                <input type="radio" name="rating" id="star4" value="4"><label for="star4" class="star"><i class="fas fa-star"></i></label>
+                <input type="radio" name="rating" id="star3" value="3"><label for="star3" class="star"><i class="fas fa-star"></i></label>
+                <input type="radio" name="rating" id="star2" value="2"><label for="star2" class="star"><i class="fas fa-star"></i></label>
+                <input type="radio" name="rating" id="star1" value="1"><label for="star1" class="star"><i class="fas fa-star"></i></label>
+              </div>
+            </div>
+            <label for="opinion">OPINIÓN:</label>
+            <textarea id="opinion" rows="4"></textarea>
+            <button id="submit-rating">ENVIAR</button>
+          </div>
+
+          <!-- Sección de comentarios -->
+          <div id="comments-section">
+            <h3>COMENTARIOS</h3>
+            <div id="comments-list"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="text-muted">
+    <div class="container">
+      <p class="float-end">
+        <a href="#">Volver arriba</a>
+      </p>
+      <p>Este sitio forma parte de <a href="https://jovenesaprogramar.edu.uy/" target="_blank">Jovenes a Programar</a></p>
+    </div>
+  </footer>
+
+  <div id="spinner-wrapper">
+    <div class="lds-ring">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/login.js"></script>
+  <script src="js/init.js"></script>
+  <script src="js/product-info.js" type="module"></script>
+</body>
+
+</html>
