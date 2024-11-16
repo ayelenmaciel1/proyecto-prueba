@@ -134,14 +134,12 @@ function validateForm() {
     // Validar tipo de envío
     const shippingSelected = document.querySelector('input[name="shipping"]:checked');
     if (!shippingSelected) {
-        setFeedback("Por favor seleccione un tipo de envío.");
         isValid = false;
     }
 
     // Validar forma de pago
     const paymentSelected = document.querySelector('input[name="payment"]:checked');
     if (!paymentSelected) {
-        setFeedback("Por favor seleccione una forma de pago.");
         isValid = false;
     }
 
@@ -173,7 +171,7 @@ document.querySelector(".btn-checkout").addEventListener("click", () => {
     // Si todo está correcto
     setFeedback("¡Compra realizada con éxito!", false);
     localStorage.removeItem("cartItems"); // Limpiar carrito
-    
+
     // Esperar un momento antes de iniciar la animación y redirigir
     setTimeout(() => {
     // Aplicar animación de desvanecimiento
