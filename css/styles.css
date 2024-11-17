@@ -1285,11 +1285,3 @@ input.invalid {
 .icon.rotated {
   transform: rotate(180deg);
 }
-
-.payment-fields {
-  display: flex;
-  flex-direction: column; /* Coloca los campos en una columna */
-  gap: 1em; /* Espacio entre los campos */
-  max-width: 400px; /* Limita el ancho para un diseño más limpio */
-  margin: 0 auto; /* Centra el contenedor horizontalmente */
-}
