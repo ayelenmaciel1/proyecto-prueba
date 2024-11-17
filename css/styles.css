@@ -1287,9 +1287,9 @@ input.invalid {
 }
 
 .payment-fields {
-  width: 100%;
-  margin: 40px auto;
-  padding: 10px;
   display: flex;
-  flex-direction: column;
+  flex-direction: column; /* Coloca los campos en una columna */
+  gap: 1em; /* Espacio entre los campos */
+  max-width: 400px; /* Limita el ancho para un diseño más limpio */
+  margin: 0 auto; /* Centra el contenedor horizontalmente */
 }
