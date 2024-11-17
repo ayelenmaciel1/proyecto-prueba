@@ -1285,3 +1285,24 @@ input.invalid {
 .icon.rotated {
   transform: rotate(180deg);
 }
+
+.payment-fields {
+  display: flex;
+  flex-wrap: wrap; /* Permite que los campos bajen de línea si no hay espacio */
+  gap: 1em; /* Espacio entre los campos */
+  justify-content: space-between; /* Espacia los campos uniformemente */
+  align-items: center; /* Alinea los elementos al centro verticalmente */
+}
+
+.payment-fields label {
+  min-width: 120px; /* Ancho mínimo para las etiquetas */
+  font-weight: bold; /* Resalta las etiquetas */
+}
+
+.payment-fields input {
+  flex: 1; /* Los campos se expanden para ocupar el espacio disponible */
+  padding: 0.5em; /* Espaciado interno */
+  font-size: 1em; /* Tamaño de texto */
+  border: 1px solid #ccc; /* Borde */
+  border-radius: 5px; /* Bordes redondeados */
+}
