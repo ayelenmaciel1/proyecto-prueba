@@ -1285,3 +1285,11 @@ input.invalid {
 .icon.rotated {
   transform: rotate(180deg);
 }
+
+.payment-fields {
+  width: 100%;
+  margin: 40px auto;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
